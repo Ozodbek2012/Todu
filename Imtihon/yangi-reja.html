@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yangi Reja Qo'shish</title>
+</head>
+<body>
+    <h2>Yangi Reja Qo'shish</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit">Saqlash</button>
+    </form>
+
+    <a href="{% url 'rejalar' %}">⬅ Rejalar ro'yxatiga qaytish</a>
+</body>
+</html>
+

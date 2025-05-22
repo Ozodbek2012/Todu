@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kutubxona | student</title>
+</head>
+<body>
+
+<h2>Hamma Studentlar</h2>
+<ul>
+  {% for s in students %}
+    <li>{{ s.ism }} - {{ s.kurs }}-kurs</li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
+
